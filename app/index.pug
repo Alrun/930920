@@ -1,0 +1,18 @@
+//- extends html/layouts/_default
+extends html/layouts/_test_svg
+
+block page-vars
+	-
+		var page = {
+			title: 'GP',
+			keywords: 'Keywords of page gp',
+			description: 'Description of page gp'
+		};
+
+block append meta
+	//-bower:css
+	//-endbower
+
+block prepend scripts
+	//-bower:js
+	//-endbower

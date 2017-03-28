@@ -1,0 +1,22 @@
+extends ../layouts/_default
+
+block page-vars
+	-
+		var page = {
+			title: 'Found Nothing',
+			keywords: 'Keywords of page 404',
+			description: 'Description of page 404'
+		};
+
+block body
+	include ../includes/_header
+	.sticky-footer__table-row
+		include ../includes/_404
+	footer.footer.row
+		.container
+			.footer__content.text-xs-center
+				p.footer__text ©2016 Real Estate
+				p.footer__text
+					|Website Template by Alrun
+		.err-page__icon
+			i.arrow-down

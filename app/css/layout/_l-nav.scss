@@ -1,0 +1,14 @@
+.header {
+	position: relative;
+}
+.header__nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+@media (max-width: 767px) {
+	.header__nav {
+		position: relative;
+		top: 0;
+	}
+}

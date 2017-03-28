@@ -1,0 +1,83 @@
+section.l-section-two.container
+	.row.info
+		.info__side-col.col-md-8
+			.info-greet
+				h2.info__title Tooltips!
+				p.info__text
+					|Lorem ipsum dolor sit amet, consectetur 
+					span.tooltip(data-tooltip="Tooltip message 1") tooltip #1
+					|, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				p.info__text
+					|lorem cillum dolore eu fugiat 
+					span.tooltip(data-tooltip="Tooltip message 2. More Text. And More.") tooltip #2
+					|  nulla pariatur. Excepteur occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			.info-agents
+				h2.info-agents__head Agents
+				.info-agents__container.row
+					.info-agents__col.col-lg-4
+						img.info-agents__img(src="img/sec-two__selling.jpg" alt="Selling")
+						h4.info-agents__title Selling
+						p.info-agents__text
+							|Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						a.info-agents__link(href="404.html") More
+					.info-agents__col.col-lg-4
+						img.info-agents__img(src="img/sec-two__investing.jpg" alt="Investing")
+						h4.info-agents__title Investing
+						p.info-agents__text
+							|Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						a.info-agents__link(href="404.html") More
+					.info-agents__col.col-lg-4
+						img.info-agents__img(src="img/sec-two__renting.jpg" alt="Renting")
+						h4.info-agents__title Renting
+						p.info-agents__text
+							|Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+						a.info-agents__link(href="404.html") More
+		.info__side-col.col-md-4
+			.w-search
+				h2.w-search__head Find your Home
+				.search
+					.search__label Home type
+					select.search__select
+						option(selected) Homes for sale
+						option Cottage
+						option Tree house
+						option Villa
+					.search__label Location
+					input.search__input(type="text" placeholder="Address, City, Zip")
+					.row
+						.col-xs-6.col-md-12.col-lg-6
+							.search__label Beds
+							select.search__select
+								option(selected) Count beds
+								option 1
+								option 2
+								option 3 or more
+						.col-xs-6.col-md-12.col-lg-6
+							.search__label Baths
+							select.search__select
+								option(selected) Count baths
+								option 1
+								option 2
+								option 3 or more
+					.row
+						.col-xs-6.col-md-12.col-lg-6
+							button.w-search__btn(type="button") Search
+			.w-our-office
+				h2.w-our-office__head Find our office
+				.w-our-office__img-wrap
+					.w-our-office__img
+				.w-our-office__container.row
+					.w-our-office__col.col-xs-6.col-md-12.col-lg-6
+						.w-our-office__item
+							a.w-our-office__link(href="#") Asia
+						.w-our-office__item
+							a.w-our-office__link(href="#") Australia
+						.w-our-office__item
+							a.w-our-office__link(href="#") Africa
+					.w-our-office__col.col-xs-6.col-md-12.col-lg-6
+						.w-our-office__item
+							a.w-our-office__link(href="#") North America
+						.w-our-office__item
+							a.w-our-office__link(href="#") Europe
+						.w-our-office__item
+							a.w-our-office__link(href="#") Latin America

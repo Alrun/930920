@@ -1,0 +1,16 @@
+doctype html
+
+block page-vars
+
+include ../_mixins
+
+html(lang='ru')
+
+	block head
+		include ../includes/_head
+
+	body.page
+		include ../includes/_index
+
+		block scripts
+			script(src="js/main.js")

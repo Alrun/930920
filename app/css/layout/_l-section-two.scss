@@ -1,0 +1,10 @@
+.info {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+@media (min-width: 768px) {
+	.info {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}

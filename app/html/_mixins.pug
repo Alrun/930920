@@ -1,0 +1,16 @@
+//- Symbol svg inject
+mixin svg-icon(name, mod)
+	- mod = mod || ''
+	svg(class="svg-" + name + ' ' + mod)
+		use(xlink:href="#" + name)
+
+mixin svg-icon-full(name, mod)
+	- mod = mod || ''
+	div(class="svg-" + name + "__container")
+		svg(class="svg-" + name + "__icon" + ' ' + mod)
+			use(xlink:href="#" + name)
+
+//- Examles
+//- +svg-icon-full('sec-two__map', 'red')
+
+//- +svg-icon('sec-two__map', 'green')
