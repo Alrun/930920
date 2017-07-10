@@ -1,0 +1,21 @@
+{
+  "name": "930920",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Alrun <fkhey2016@yandex.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Alrun/930920",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^1.12.4",
+    "bootstrap": "^3.3.7"
+  }
+}

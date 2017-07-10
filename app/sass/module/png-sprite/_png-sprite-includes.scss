@@ -1,0 +1,80 @@
+@import 'png-sprite-positions';
+@import 'png-sprite-mixins';
+
+.icon {
+	display: inline-block;
+  vertical-align: middle;
+}
+
+.icon-logo {
+  @include sprite($logo);
+}
+
+.icon-home-1 {
+  @include sprite($home-1);
+}
+
+.icon-arrow_left {
+  @include sprite($arrow-left);
+}
+.icon-arrow_right {
+  @include sprite($arrow-right);
+}
+
+.icon-gorod {
+  @include sprite($gorod);
+}
+.icon-pereezdi {
+  @include sprite($pereezdi);
+}
+.icon-mezhgorod {
+  @include sprite($mezhgorod);
+}
+.icon-gruzchiki {
+  @include sprite($gruzchiki);
+}
+.icon-expedirovanie {
+  @include sprite($expedirovanie);
+}
+
+.icon-hands {
+  @include sprite($hands);
+}
+.icon-manager {
+  @include sprite($manager);
+}
+.icon-lock {
+  @include sprite($lock);
+}
+.icon-forwarding {
+  @include sprite($forwarding);
+}
+.icon-secure {
+  @include sprite($secure);
+}
+.icon-bank {
+  @include sprite($bank);
+}
+
+.icon-person {
+  @include sprite($person);
+}
+.icon-mail {
+  @include sprite($mail);
+}
+.icon-at {
+  @include sprite($at);
+}
+.icon-ok {
+  @include sprite($ok);
+}
+.icon-error {
+  @include sprite($error);
+}
+.icon-phone {
+  @include sprite($phone);
+}
+
+.icon-social-vk {
+  @include sprite($social-vk);
+}

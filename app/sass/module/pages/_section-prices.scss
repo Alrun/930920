@@ -1,0 +1,28 @@
+.prices {
+	background-color: lighten($third-cl, 80%);
+	background-image: linear-gradient(lighten($third-cl, 70%) 0%, #ffffff 100%);;
+}
+.table {
+	background-color: #fff;
+}
+.table__service {
+	width: 70%;
+}
+.table__price {
+	width: 15%;
+}
+.table__time {
+	width: 15%;
+}
+.table__service,
+.table__price,
+.table__time {
+	background-color: $second-cl;
+	color: #fff;
+}
+
+@media (max-width: 543px) {
+	.table {
+		font-size: 14px;
+	}
+}

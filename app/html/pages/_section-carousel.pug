@@ -1,0 +1,164 @@
+section#slider.slider
+	.container
+		.row
+			#carousel-promo.carousel.slide(data-ride="carousel", data-interval="false")
+				// Indicators
+				ol.carousel-indicators
+					li.active(data-target="#carousel-promo", data-slide-to="0")
+					li(data-target="#carousel-promo", data-slide-to="1")
+					li(data-target="#carousel-promo", data-slide-to="2")
+					li(data-target="#carousel-promo", data-slide-to="3")
+					li(data-target="#carousel-promo", data-slide-to="4")
+
+				// Wrapper for slides
+				.carousel-inner(role="listbox")
+					.item.active
+						.col-sm-6.col-sm-offset-3
+							.slide__back.text-center
+								.slide__img-wrap
+									img.slide__img.slide__img_faded(src="img/pereezdy.jpg", alt="")
+						.col-sm-3.static
+							.slide__front
+								.slide__content
+									.slide__right
+										.container
+											.row
+												h2.h1.slide-full__title Офисные и квартирные переезды
+											.row
+												.col-sm-5.col-sm-offset-1.col-md-4.col-md-offset-2
+													.slide-full__countdown
+														.coutdown__title До конца акции осталось
+														#countdown.timeTo.timeTo-white
+												.col-sm-5.col-md-4.slide-full__price-wrap
+													.slide-full__price.text-nowrap 950 
+														span.rub a
+														|/час
+											.row
+												.col-sm-5.col-sm-offset-1.col-md-4.col-md-offset-2
+													.slide-full__text
+														p.h2.text-info.text-nowrap.mt_0 Газель и 2 грузчика
+												.col-sm-5.col-md-4
+													.slide-full__btn-wrap
+														a.btn.btn-info.btn-lg(href="#scroll-slide__price", data-toggle="collapse", data-target="#collapseslide__price", role="button") Сделать заявку
+					.item
+						.col-sm-6
+							.slide__left
+								.slide__img-wrap
+									img.slide__img(src="img/gruzchiki.jpg", alt="")
+						.col-sm-6
+							.slide__right
+								.slide__content
+									h3.slide__title Грузчики в Ярославле
+									ul
+										li Квартирный, дачный и офисный переезд
+										li Сборка/разборка мебели
+										li Разгрузка/погрузка фур и ж/д вагонов
+										li Складские работы
+									table
+										tbody
+											tr
+												td.table_va-t
+													.slide__price Стоимость услуг:
+												td
+													div
+														div Грузчики от 
+															span.text-danger 250 
+															span.rub a
+															|/час
+															span.text-success *
+														.small.text-success *(минимум 2 часа)
+					.item
+						.col-sm-6
+							.slide__left
+								.slide__img-wrap
+									img.slide__img(src="img/gazel-3m.jpg", alt="")
+						.col-sm-6
+							.slide__right
+								.slide__content
+									h3.slide__title Газель в Ярославле (3м) тент
+									.slide__text Грузоподъемность – 1500 кг
+									.slide__text Максимальный объем груза – 9 куб.м
+									p.slide__text Количество пассажирских мест – 2
+									table
+										tbody
+											tr
+												td.table_va-t
+													.slide__price Стоимость услуг:
+												td
+													div
+														div Город 
+															span.text-danger 400 
+															span.rub a
+															|/час
+															span.text-success *
+														div Межгород 
+															span.text-danger 14 
+															span.rub a
+															|/км
+														.small.text-success *(минимум 2 часа)
+					.item
+						.col-sm-6
+							.slide__left
+								.slide__img-wrap
+									img.slide__img(src="img/gazel-4m.jpg", alt="")
+						.col-sm-6
+							.slide__right
+								.slide__content
+									h3.slide__title Удлиненная газель (4м) тент
+									.slide__text Грузоподъемность – 1500 кг
+									.slide__text Максимальный объем груза – 18 куб.м
+									p.slide__text Количество пассажирских мест – 2
+									table
+										tbody
+											tr
+												td.table_va-t
+													.slide__price Стоимость услуг:
+												td
+													div
+														div Город 
+															span.text-danger 450 
+															span.rub a
+															|/час
+															span.text-success *
+														div Межгород 
+															span.text-danger 15 
+															span.rub a
+															|/км
+														.small.text-success *(минимум 2 часа)
+					.item
+						.col-sm-6
+							.slide__left
+								.slide__img-wrap
+									img.slide__img(src="img/gazel-farmer.jpg", alt="")
+						.col-sm-6
+							.slide__right
+								.slide__content
+									h3.slide__title Газель фермер (4м) тент
+									.slide__text Грузоподъемность – 1500 кг
+									.slide__text Максимальный объем груза – 18 куб.м
+									p.slide__text Количество пассажирских мест – 6
+									table
+										tbody
+											tr
+												td.table_va-t
+													.slide__price Стоимость услуг:
+												td
+													div
+														div Город 
+															span.text-danger 550 
+															span.rub a
+															|/час
+															span.text-success *
+														div Межгород 
+															span.text-danger 15 
+															span.rub a
+															|/км
+														.small.text-success *(минимум 2 часа)
+
+				// Controls
+				a.left.carousel-control(href="#carousel-promo", role="button", data-slide="prev")
+					span.icon-arrow_left(aria-hidden="true")
+					span.sr-only Previous
+				a.right.carousel-control(href="#carousel-promo", role="button", data-slide="next")
+					span.icon-arrow_right(aria-hidden="true")
+					span.sr-only Next

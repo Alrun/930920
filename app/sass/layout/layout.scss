@@ -1,0 +1,20 @@
+section {
+	padding-bottom: 60px;
+}
+.table > thead > tr > th {
+	vertical-align: middle;
+	font-weight: 400;
+}
+label {
+	font-weight: normal;
+}
+textarea {
+	resize: vertical;
+}
+
+
+@media (max-width: 543px) {
+	label {
+		font-size: 14px;
+	}
+}

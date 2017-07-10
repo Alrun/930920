@@ -1,0 +1,60 @@
+.navbar {
+	margin-bottom: 0;
+	border: none;
+	z-index: 1;
+}
+.navbar-inverse .navbar-brand {
+	border: none;
+	background-color: transparent;
+	color: #fff;
+	transition: 0.2s;
+
+	&:hover {
+		color: #ccc;
+	}
+}
+.navbar-inverse .navbar-collapse {
+	border-color: lighten($second-cl, 5%);
+}
+.navbar-inverse .navbar-toggle {
+	border-color: transparent;
+	&:hover,
+	&:focus {
+		background-color: transparent;
+	}
+}
+
+.nav__item {
+	color: #fff;
+	transition: 0.2s;
+
+	&:hover {
+		color: #ccc;
+	}
+}
+.nav__link {
+	color: inherit !important;
+}
+
+@media (min-width: 768px) {
+	.navbar {
+		border-radius: 0;
+		position: absolute;
+		bottom: -50px;
+		width: 100%;
+	}
+	.nav__item {
+		border-bottom: 4px solid transparent;
+	}
+	.nav__item_active {
+		border-bottom-color: $main-cl;
+		color: $main-cl;
+
+		&:hover {
+			color: $main-cl;
+		}
+	}
+	.nav__link {
+		padding-bottom: 11px !important;
+	}
+}

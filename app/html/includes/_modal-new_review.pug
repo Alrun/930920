@@ -1,0 +1,53 @@
+.modal.fade#myModal(tabindex="-1", role="dialog")
+	.modal-dialog
+		.modal-content
+			.modal-header
+				button.close(type="button", data-dismiss="modal") ×
+				h3.modal-title#myModalLabel Оставить отзыв
+			.modal-body
+				form.form-horizontal
+					.form-group.has-feedback
+						label.control-label.col-xs-3(for="InputName") Ф.И.О.
+							span.text-danger *
+						.col-xs-9.col-sm-8
+							.input-group
+								span.input-group-addon
+									i.icon.icon-person
+								input.form-control#InputName(type="text", required="required", name="InputName" placeholder="Фамилия И.О.")
+							span.form-control-feedback.icon-ok
+					.form-group
+						label.control-label.col-xs-3(for="InputCompany") Компания
+						.col-xs-9.col-sm-8
+							input.form-control#InputCompany(type="text", name="InputCompany", placeholder="Название вашей компании")
+					.form-group
+						label.control-label.col-xs-3(for="InputJob") Должность
+						.col-xs-9.col-sm-8
+							input.form-control#InputJob(type="text", name="InputJob", placeholder="Занимая должность")
+					.form-group.has-feedback
+						label.control-label.col-xs-3(for="InputPhone") Телефон
+							span.text-danger *
+						.col-xs-9.col-sm-8
+							.input-group
+								span.input-group-addon +7
+								input.form-control#InputPhone(type="text", required="required", pattern="^[-+0-9()\s]+$", name="InputPhone", placeholder="Ваш номер телефона")
+							span.form-control-feedback.icon-error
+					.form-group.has-feedback
+						label.control-label.col-xs-3(for="InputEmail") E-mail
+							span.text-danger *
+						.col-xs-9.col-sm-8
+							.input-group
+								span.input-group-addon
+									i.icon.icon-mail
+								input.form-control#InputEmail(type="email", required="required", name="InputEmail", placeholder="Ваш e-mail")
+							span.form-control-feedback.icon.icon-error
+					.form-group
+						label.control-label.col-xs-3(for="InputReview") Ваш отзыв
+							span.text-danger *
+						.col-xs-9.col-sm-8
+							textarea.form-control#InputReview(rows="3", required="required", name="InputText", placeholder="Введите текст")
+				.text-right
+					p.text-danger * - обязательные поля
+			.modal-footer
+				.btn-center
+					button.btn.btn-default(type="button", data-dismiss="modal") Отмена
+					button#save.btn.btn-primary(type="button") Отправить

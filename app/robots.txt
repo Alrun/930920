@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /404
+Disallow: /download
+Disallow: /fonts
+
+Sitemap: https://mbeg.ru/sitemap.xml
+Host: https://mbeg.ru

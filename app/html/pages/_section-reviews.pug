@@ -1,0 +1,84 @@
+section#reviews.reviews
+	.container
+		.row
+			.h2.page__title.text-center Отзывы клиентов
+
+			#carousel-reviews.carousel.slide(data-ride="carousel", data-interval="false")
+
+				ol.carousel-indicators
+					li.active(data-target="#carousel-reviews", data-slide-to="0")
+					li(data-target="#carousel-reviews", data-slide-to="1")
+					li(data-target="#carousel-reviews", data-slide-to="2")
+					li(data-target="#carousel-reviews", data-slide-to="3")
+					li(data-target="#carousel-reviews", data-slide-to="4")
+
+				.carousel-inner(role="listbox")
+
+					.item
+						.col-sm-3.col-sm-offset-1
+							.slide__left
+								.slide__img-wrap
+									img.slide__img.reviews__photo.img-thumbnail(src="img/review-1.jpg", alt="")
+						.col-sm-7
+							.slide__right
+								.slide__content
+									.slide__title.reviews__name.h4 Лесников Д.В.
+									.reviews__job.h5 Генеральный директор сети магазинов MachineStore в Ярославле
+									p.reviews__text
+										|Работаем по договору с 2012 года. Все работы выполняются в полном объеме и точно в срок. Надеемся на дальнейшее сотрудничество.
+
+					.item
+						.col-sm-3.col-sm-offset-1
+							.slide__left
+								.slide__img-wrap
+									img.slide__img.reviews__photo.img-thumbnail(src="img/review-no-foto.jpg", alt="")
+						.col-sm-7
+							.slide__right
+								.slide__content
+									.slide__title.reviews__name.h4 Вахмянин С.Ю.
+									.reviews__job.h5 Руководитель отдела продаж ЗАО «Эксплуатация»
+									p.reviews__text
+										|Наша компания занимается ремонтом и обслуживанием холодильного оборудования. Регулярно пользуемся услугами транспортной компании «Авто Групп» уже на протяжении пяти лет.
+					.item
+						.col-sm-3.col-sm-offset-1
+							.slide__left
+								.slide__img-wrap
+									img.slide__img.reviews__photo.img-thumbnail(src="img/review-no-foto.jpg", alt="")
+						.col-sm-7
+							.slide__right
+								.slide__content
+									.slide__title.reviews__name.h4 Рогозин И.А.
+									.reviews__job.h5 Генеральный директор ООО «Ривсан»
+									p.reviews__text
+										|Занимается ремонтом и обслуживанием техники JCB. Регулярно пользуемся услугами Авто Групп.
+					.item
+						.col-sm-3.col-sm-offset-1
+							.slide__left
+								.slide__img-wrap
+									img.slide__img.reviews__photo.img-thumbnail(src="img/review-2.jpg", alt="")
+						.col-sm-7
+							.slide__right
+								.slide__content
+									.slide__title.reviews__name.h4 Бреева Екатерина
+									p.reviews__text
+										|Хочу выразить благодарность за отлично организованный квартирный переезд с грузчиками. Справились профессионально, быстро и качественно!
+					.item.active
+						.col-sm-3.col-sm-offset-1
+							.slide__left
+								.slide__img-wrap
+									img.slide__img.reviews__photo.img-thumbnail(src="img/review-add.jpg", alt="")
+						.col-sm-7
+							.slide__right
+								.slide__content
+									.slide__title.reviews__name.h3 Оставьте отзыв о нашей работе
+									button.reviews__btn.btn.btn-info.btn-lg(type="button", data-toggle="modal", data-target="#myModal") Добавить отзыв
+									.h3.reviews-add
+										.reviews-add__alert.h3 Спасибо за ваш отзыв!
+										.reviews-add__text.h4 Ваши данные успешно отправлены.
+
+				a.left.carousel-control(href="#carousel-reviews", role="button", data-slide="prev")
+					span.icon-arrow_left(aria-hidden="true")
+					span.sr-only Previous
+				a.right.carousel-control(href="#carousel-reviews", role="button", data-slide="next")
+					span.icon-arrow_right(aria-hidden="true")
+					span.sr-only Next

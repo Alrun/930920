@@ -1,0 +1,239 @@
+/* Gorizontal align */
+.text-xs-left {
+  text-align: left !important;
+}
+.text-xs-right {
+  text-align: right !important;
+}
+.text-xs-center {
+  text-align: center !important;
+}
+
+@media (min-width: 544px) {
+  .text-sm-left {
+    text-align: left !important;
+  }
+  .text-sm-right {
+    text-align: right !important;
+  }
+  .text-sm-center {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-md-left {
+    text-align: left !important;
+  }
+  .text-md-right {
+    text-align: right !important;
+  }
+  .text-md-center {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .text-lg-left {
+    text-align: left !important;
+  }
+  .text-lg-right {
+    text-align: right !important;
+  }
+  .text-lg-center {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .text-xl-left {
+    text-align: left !important;
+  }
+  .text-xl-right {
+    text-align: right !important;
+  }
+  .text-xl-center {
+    text-align: center !important;
+  }
+}
+
+/* <span class="break-xs-up">Перенос строки</span> */
+.break-xs-up::before {
+  content: "\A";
+  white-space: pre;
+}
+
+@media (max-width: 543px) {
+  .break-xs-down::before {
+    content: "\A";
+    white-space: pre;
+  }
+}
+
+@media (min-width: 544px) {
+  .break-sm-up::before {
+    content: "\A";
+    white-space: pre;
+  }
+}
+
+@media (max-width: 767px) {
+  .break-sm-down::before {
+    content: "\A";
+    white-space: pre;
+  }
+}
+
+@media (min-width: 768px) {
+  .break-md-up::before {
+    content: "\A";
+    white-space: pre;
+  }
+}
+
+@media (max-width: 991px) {
+  .break-md-down::before {
+    content: "\A";
+    white-space: pre;
+  }
+}
+
+@media (min-width: 992px) {
+  .break-lg-up::before {
+    content: "\A";
+    white-space: pre;
+  }
+}
+
+@media (max-width: 1199px) {
+  .break-lg-down::before {
+    content: "\A";
+    white-space: pre;
+  }
+}
+
+@media (min-width: 1200px) {
+  .break-xl-up::before {
+    content: "\A";
+    white-space: pre;
+  }
+}
+
+.break-xl-down::before {
+  content: "\A";
+  white-space: pre;
+}
+
+/* Hide */
+.hidden-xs-up {
+  display: none !important;
+}
+
+@media (max-width: 543px) {
+  .hidden-xs-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 544px) {
+  .hidden-sm-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hidden-sm-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .hidden-md-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .hidden-md-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .hidden-lg-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  .hidden-lg-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hidden-xl-up {
+    display: none !important;
+  }
+}
+
+.hidden-xl-down {
+  display: none !important;
+}
+
+.static {
+  position: static;
+}
+
+
+// Text-transform
+.text_up {
+  text-transform: uppercase;
+}
+.text_low {
+  text-transform: lowercase;
+}
+.text_norm {
+  text-transform: none;
+}
+
+.text_italick {
+  font-style: italic;
+}
+.text_no-italic {
+  font-style: normal;
+}
+
+.text_light {
+  font-weight: lighter;
+}
+
+// Text-decoration
+.underline {
+  text-decoration: underline;
+}
+
+// Text-size
+.text_small {
+  font-size: 0.75rem;
+}
+.text_big {
+  font-size: 1.5625rem;
+}
+.text_double {
+  font-size: 2rem;
+}
+
+
+.mt_0 {
+  margin-top: 0;
+}
+.mt_1-5 {
+  margin-top: 1.5rem;
+}
+.mb_0 {
+  margin-bottom: 0;
+}
+.mb_1-5 {
+  margin-bottom: 1.5rem;
+}

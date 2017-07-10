@@ -1,0 +1,58 @@
+.services {
+	position: relative;
+	background-color: $second-cl;
+	background-image: radial-gradient(lighten($second-cl, 10%) 0%, darken($second-cl, 20%) 150%);
+	z-index: 0;
+}
+
+.popover-title {
+	padding: 8px;
+	background-color: $second-cl;
+	color: #fff;
+}
+.popover-content {
+	padding: 8px;
+}
+
+.pop {
+	max-width: 280px;
+	margin: 15px auto 0;
+	cursor: pointer;
+	z-index: 1;
+	position: relative;
+}
+.pop__title {
+	color: #fff;
+	font-weight: 300;
+	transition: 0.2s;
+}
+.pop:hover .pop__title {
+	color: $main-cl;
+}
+
+@media (min-width: 768px) {
+	.bg-map {
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding-top: 55%;
+			background-image: url(../img/sprite.png);
+			background-position: 0% 100%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			z-index: -1;
+		}
+	}
+}
+
+
+@media (max-width: 991px) {
+	.bg-map::after {
+		margin-top: 75px;
+	}
+}

@@ -1,0 +1,29 @@
+.rub {
+	font-family: ALSRubl, $font;
+}
+
+.page__title {
+	margin: 30px 0;
+	text-transform: uppercase;
+}
+.page__title_white {
+	color: #fff;
+}
+
+@import 'section-carousel';
+@import 'section-services';
+@import 'section-prices';
+@import 'section-advantages';
+@import 'section-reviews';
+
+.modal {
+	font-weight: 300;
+}
+.form-control-feedback {
+	top: 50%;
+	right: 20px !important;
+	margin-top: -13px;
+}
+.input-group-addon {
+	padding: 0 10px;
+}
