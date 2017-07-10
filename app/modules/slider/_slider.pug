@@ -1,0 +1,24 @@
+.carousel
+	input.carousel__radio(id="slide-1" type="radio" name="input" checked="checked")
+	input.carousel__radio(id="slide-2" type="radio" name="input")
+	input.carousel__radio(id="slide-3" type="radio" name="input")
+
+	ul.carousel__container
+		li.carousel__item
+			img.carousel__img(src="img/1.jpg" alt="")
+		li.carousel__item
+			img.carousel__img(src="img/2.jpg" alt="")
+		li.carousel__item
+			img.carousel__img(src="img/3.jpg" alt="")
+
+	.carousel__naw-arrows
+		label.carousel__arrow(for="slide-1")
+		label.carousel__arrow(for="slide-2")
+		label.carousel__arrow(for="slide-3")
+		label.carousel__arrow.carousel__arrow_first(for="slide-1")
+		label.carousel__arrow.carousel__arrow_last(for="slide-3")
+
+	.carousel__nav-btn
+		label.carousel__btn(for="slide-1")
+		label.carousel__btn(for="slide-2")
+		label.carousel__btn(for="slide-3")

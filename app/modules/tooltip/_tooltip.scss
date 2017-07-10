@@ -1,0 +1,42 @@
+//html <span class="tooltip" data-tooltip="Test 1 sit sit">
+
+.tooltip {
+	position: relative;
+	cursor: pointer;
+	&::before,
+	&::after {
+		position: absolute;
+		left: 50%;
+		margin-bottom: 10px;
+		visibility: hidden;
+		opacity: 0;
+		transition: .6s;
+	}
+	&::before {
+		content: attr(data-tooltip);
+		bottom: 1.5rem;
+		width: 12rem;
+		padding: 5px 10px;
+		margin-left: -6rem;
+		border-radius: 4px;
+		text-align: center;
+		color: pink;
+		background: #000;
+	}
+	&::after {
+		content: "";
+		bottom: 1.05rem;
+		margin-left: -4px;
+		border-width: 8px 8px 0 8px;
+		border-color: #000 transparent transparent transparent;
+		border-style: solid;
+	}
+	&:hover {
+		&::before,
+		&::after {
+			margin-bottom: 0;
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+}

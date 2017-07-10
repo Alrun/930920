@@ -1,0 +1,29 @@
+// Arrow Down
+.arrow-down {
+	position: relative;
+	height: 24px;
+	vertical-align: middle;
+	line-height: 30px;
+}
+.arrow-down::before,
+.arrow-down::after {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	height: 11px;
+	margin-left: -2px;
+	bottom: 0;
+	transform-origin: bottom;
+}
+.arrow-down,
+.arrow-down::before,
+.arrow-down::after {
+	border: 2px solid #fff;
+	border-radius: 4px;
+}
+.arrow-down::before {
+	transform: rotate(45deg);
+}
+.arrow-down::after {
+	transform: rotate(-45deg);
+}
