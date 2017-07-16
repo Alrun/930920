@@ -9,6 +9,8 @@ html {
 * {
 	-webkit-box-sizing: inherit;
 	box-sizing: inherit;
+	outline: none;
+
 	&::before {
 		-webkit-box-sizing: inherit;
 		box-sizing: inherit;
@@ -17,7 +19,6 @@ html {
 		-webkit-box-sizing: inherit;
 		box-sizing: inherit;
   }
-  outline: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,17 +29,4 @@ h1, h2, h3, h4, h5, h6 {
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-top: 0;
   margin-bottom: 8px;
-}
-
-// address {
-// 	font-style: normal;
-// }
-
-.btn:focus,
-.btn:active:focus,
-.btn.active:focus,
-.btn.focus,
-.btn:active.focus,
-.btn.active.focus {
-	outline: none;
 }

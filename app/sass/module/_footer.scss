@@ -48,8 +48,72 @@
 	right: 0;
 	color: #fff;
 	padding: 10px 0;
-	background-color: $second-cl;
+	background-color: darken($second-cl, 5%);
 }
+
+
+.social {
+	display: inline-block;
+
+	&__item {
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+		margin-right: 3px;
+		background-image: url(social-vk.png);
+		background-color: #1f2896;
+		vertical-align: top;
+	}
+}
+
+.share {
+	display: inline-block;
+	position: relative;
+
+	&__btn {
+		position: relative;
+		padding-left: 5px;
+		z-index: 2;
+		cursor: pointer;
+		color: #fff;
+		background-color: #1f2896;
+	}
+
+	&__icon {
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+		background-image: url(social-vk.png);
+		vertical-align: middle;
+	}
+
+	&__drop {
+		display: none;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 166px;
+		padding: 1px 3px 35px;
+		font-size: 0;
+		background-color: #1f2896;
+	}
+	
+	&__item {
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+		margin: 5px 4px 2px;
+		background-color: #14195f;
+		background-image: url(social-vk.png);
+	}
+}
+
+.share__btn:hover ~ .share__drop,
+.share__drop:hover {
+	display: block;
+}
+
+
 .copyright {
 	display: inline-block;
 	text-align: left;

@@ -1,6 +1,10 @@
 #carousel-reviews .carousel-control {
 	background-image: none;
 }
+.img-thumbnail {
+	border-radius: 0;
+}
+
 .reviews__photo {
 	width: 85%;
 	margin-bottom: 15px;
@@ -12,15 +16,18 @@
 .reviews__btn {
 	margin-top: 10px;
 }
+
 .reviews-add {
 	margin-top: 30px;
-}
-.reviews-add__alert {
-	color: #555;
-}
-.reviews-add__text {
-	font-weight: 300;
-	color: #1b6d85;
+
+	&__alert {
+		color: #555;
+	}
+
+	&__text {
+		font-weight: 300;
+		color: #1b6d85;
+	}
 }
 
 @media (max-width: 767px) {

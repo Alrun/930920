@@ -1,5 +1,10 @@
 .rub {
 	font-family: ALSRubl, $font;
+	color: #555;
+
+	&_red {
+		color: #ff0000;
+	}
 }
 
 .page__title {
@@ -26,4 +31,30 @@
 }
 .input-group-addon {
 	padding: 0 10px;
+}
+
+.btn {
+	border-radius: 0;
+}
+.btn-warning,
+.btn-warning:active:focus,
+.btn-warning:active,
+.btn-warning:focus {
+	background-color: lighten($main-cl, 8%);
+	border-color: $main-cl;
+}
+.btn-warning:hover {
+	background-color: $main-cl;
+	border-color: darken($main-cl, 8%);
+}
+.btn-info,
+.btn-info:active:focus,
+.btn-info:active,
+.btn-info:focus {
+	background-color: lighten($second-cl, 8%);
+	border-color: $second-cl;
+}
+.btn-info:hover {
+	background-color: $second-cl;
+	border-color: darken($second-cl, 8%);
 }

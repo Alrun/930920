@@ -1,12 +1,16 @@
 .services {
 	position: relative;
 	background-color: $second-cl;
-	background-image: radial-gradient(lighten($second-cl, 10%) 0%, darken($second-cl, 20%) 150%);
+	background-image: radial-gradient(lighten($second-cl, 5%) 0%, darken($second-cl, 15%) 150%);
 	z-index: 0;
 }
 
+.popover {
+	border-radius: 0;
+}
 .popover-title {
 	padding: 8px;
+	border-radius: 0;
 	background-color: $second-cl;
 	color: #fff;
 }
@@ -49,7 +53,6 @@
 		}
 	}
 }
-
 
 @media (max-width: 991px) {
 	.bg-map::after {

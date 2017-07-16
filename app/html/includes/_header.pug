@@ -1,17 +1,22 @@
-header
+header#header.header
 
 	include _navbar
 
-	.main
-		.main-content
+	.header__container
+		.header__wrap
 			.container
 				.row
-					.col-sm-5.col-md-5.col-lg-4
-						.phone
-							.row
-								.col-sm-6
-									div +7 (4852) 930-920
-								.col-sm-6
-									div +7 (915) 991-28-41
-						.title
-							h1.title__text.text-uppercase Грузоперевозки и грузчики в Ярославле
+					.col-sm-5.col-md-4
+						.pennant
+						.header__content
+							.title
+								h1.title__text.text-uppercase
+									|Грузоперевозки 
+									span.break-xs-up и грузчики в
+									span.break-xs-up Ярославле
+							.phone
+								.row
+									.col-sm-6
+										.phone__item +7 (4852) 930-920
+									.col-sm-6
+										.phone__item.phone__item_right +7 (915) 991-28-41

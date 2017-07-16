@@ -35,13 +35,16 @@ h4, h5, h6,
   font-weight: 400;
 }
 
-// h1, .h1 {font-size: 2rem;}
-// h2, .h2 {font-size: 1.8125rem;}
-// h3, .h3 {font-size: 1.5625rem;}
-// h4, .h4 {font-size: 1.3125rem;}
-// h5, .h5 {font-size: 1.125rem;}
-// h6, .h6 {font-size: 1rem;}
+h1, .h1 {font-size: 38px;}
+h2, .h2 {font-size: 32px;}
+h3, .h3 {font-size: 26px;}
+h4, .h4 {font-size: 20px;}
+h5, .h5 {font-size: 16px;}
+h6, .h6 {font-size: 14px;}
 
+a:focus {
+  outline-color: orange;
+}
 // h1, h2 {
 //   margin-bottom: 0;
 // }

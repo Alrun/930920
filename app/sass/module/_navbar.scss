@@ -1,6 +1,7 @@
 .navbar {
 	margin-bottom: 0;
 	border: none;
+	background-color: darken($second-cl, 5%);
 	z-index: 1;
 }
 .navbar-inverse .navbar-brand {
@@ -14,7 +15,7 @@
 	}
 }
 .navbar-inverse .navbar-collapse {
-	border-color: lighten($second-cl, 5%);
+	border-color: $second-cl;
 }
 .navbar-inverse .navbar-toggle {
 	border-color: transparent;
