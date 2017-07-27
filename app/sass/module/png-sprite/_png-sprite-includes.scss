@@ -6,12 +6,8 @@
   vertical-align: middle;
 }
 
-.icon-logo {
-  @include sprite($logo);
-}
-
-.icon-home-1 {
-  @include sprite($home-1);
+.icon-home {
+  @include sprite($home);
 }
 
 .icon-arrow_left {
@@ -75,6 +71,9 @@
   @include sprite($phone);
 }
 
+.icon-social-share {
+  @include sprite($social-share);
+}
 .icon-social-vk {
   @include sprite($social-vk);
 }

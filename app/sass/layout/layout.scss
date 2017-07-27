@@ -1,6 +1,10 @@
 section {
 	padding-bottom: 60px;
 }
+b,
+strong {
+	font-weight: 600;
+}
 .table > thead > tr > th {
 	vertical-align: middle;
 	font-weight: 400;
@@ -10,6 +14,10 @@ label {
 }
 textarea {
 	resize: vertical;
+}
+input,
+textarea {
+	color: #333 !important;
 }
 
 

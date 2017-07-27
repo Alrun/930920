@@ -1,41 +1,45 @@
 .contacts {
-	// background-color: $second-cl;
 	position: relative;
 	padding: 0;
-}
-.yar {
-	padding-top: 45%;
-	background-image: url(../img/yaroslavl.jpg);
-	background-size: cover;
 
-	&:before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: $second-cl;
-		opacity: 0.8;
+	&__bg {
+		padding-top: 45%;
+		background-image: url(../img/yaroslavl.jpg);
+		background-size: cover;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: $second-cl;
+			opacity: 0.8;
+		}
 	}
-}
-.cont {
-	position: absolute;
-	top: 10%;
-	left: 0;
-	right: 0;
-	text-align: center;
-}
-.tel {
-	display: inline-block;
-	padding: 0 60px 40px;
-	background-color: #fff;
-}
-.contacts__item {
-	margin-bottom: 5px;
-}
-.contacts__img {
-	margin-right: 10px;
+
+	&__container {
+		position: absolute;
+		top: 10%;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+
+	&__content {
+		display: inline-block;
+		padding: 0 60px 40px;
+		background-color: #fff;
+	}
+
+	&__item {
+		margin-bottom: 5px;
+	}
+
+	&__img {
+		margin-right: 10px;
+	}
 }
 
 .wrap-footer {
@@ -51,16 +55,16 @@
 	background-color: darken($second-cl, 5%);
 }
 
-
 .social {
 	display: inline-block;
+	min-width: 180px;
+	text-align: left;
 
 	&__item {
 		display: inline-block;
 		width: 32px;
 		height: 32px;
 		margin-right: 3px;
-		background-image: url(social-vk.png);
 		background-color: #1f2896;
 		vertical-align: top;
 	}
@@ -72,7 +76,7 @@
 
 	&__btn {
 		position: relative;
-		padding-left: 5px;
+		padding: 0 2px 0 5px;
 		z-index: 2;
 		cursor: pointer;
 		color: #fff;
@@ -83,7 +87,7 @@
 		display: inline-block;
 		width: 32px;
 		height: 32px;
-		background-image: url(social-vk.png);
+		margin-left: 5px;
 		vertical-align: middle;
 	}
 
@@ -97,14 +101,14 @@
 		font-size: 0;
 		background-color: #1f2896;
 	}
-	
-	&__item {
-		display: inline-block;
-		width: 32px;
-		height: 32px;
-		margin: 5px 4px 2px;
-		background-color: #14195f;
-		background-image: url(social-vk.png);
+}
+
+#share42 a {
+	margin: 5px 4px 2px;
+	background-color: $second-cl !important;
+
+	&:hover {
+		background-color: darken($second-cl, 5%) !important;
 	}
 }
 
@@ -113,22 +117,33 @@
 	display: block;
 }
 
-
-.copyright {
-	display: inline-block;
-	text-align: left;
+.footer-metrika {
+	text-align: center;
 }
+.footer-copyright {
+	text-align: right;
+}
+
 
 @media (max-width: 767px) {
-	.yar {
-		padding-top: 65%;
+	.contacts__bg {
+		padding-top: 120%;
+		background-image: url(../img/yaroslavl-mobile.jpg);
+	}
+
+	.footer-social,
+	.footer-copyright {
+		margin: 15px 0;
+		text-align: center;
 	}
 }
+
+
 @media (max-width: 543px) {
-	.yar {
-		padding-top: 100%;
+	.contacts__bg {
+		padding-top: 200%;
 	}
-	.tel {
+	.contacts__content {
 		padding: 0 40px 20px;
 	}
 }

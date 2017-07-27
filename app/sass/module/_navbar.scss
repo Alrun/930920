@@ -25,7 +25,7 @@
 	}
 }
 
-.nav__item {
+.menu-item {
 	color: #fff;
 	transition: 0.2s;
 
@@ -33,21 +33,23 @@
 		color: #ccc;
 	}
 }
-.nav__link {
+.nav li a {
 	color: inherit !important;
 }
 
+
 @media (min-width: 768px) {
 	.navbar {
-		border-radius: 0;
-		position: absolute;
-		bottom: -50px;
 		width: 100%;
+		border-radius: 0;
+		z-index: 100;
+		position: absolute;
+		bottom: -50px;		
 	}
-	.nav__item {
+	.menu-item {
 		border-bottom: 4px solid transparent;
 	}
-	.nav__item_active {
+	.nav .active {
 		border-bottom-color: $main-cl;
 		color: $main-cl;
 
@@ -55,7 +57,27 @@
 			color: $main-cl;
 		}
 	}
-	.nav__link {
+
+	.nav .active .icon-home {
+		background-position: 0 -46px;
+	}
+
+	.nav li a {
 		padding-bottom: 11px !important;
 	}
+	.nav .active > a {
+		background-color: transparent !important;
+	}
+}
+
+
+// Float menu
+.float-menu_normal {
+	position: absolute;
+	bottom: -50px;
+}
+.float-menu_fixed {
+	position: fixed;
+	top: 0;
+	bottom: inherit;
 }

@@ -10,9 +10,17 @@
 .page__title {
 	margin: 30px 0;
 	text-transform: uppercase;
+	
+	&_white {
+		color: #fff;
+	}
 }
-.page__title_white {
-	color: #fff;
+
+@media (min-width: 768px) {
+	.anchor {
+		position: relative;
+		top: -45px;
+	}
 }
 
 @import 'section-carousel';
@@ -24,6 +32,12 @@
 .modal {
 	font-weight: 300;
 }
+.modal-content {
+	border-radius: 0;
+}
+.form-control {
+	border-radius: 0;
+}
 .form-control-feedback {
 	top: 50%;
 	right: 20px !important;
@@ -31,6 +45,7 @@
 }
 .input-group-addon {
 	padding: 0 10px;
+	border-radius: 0;
 }
 
 .btn {

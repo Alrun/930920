@@ -1,4 +1,4 @@
-section#reviews.reviews
+section.reviews
 	.container
 		.row
 			.h2.page__title.text-center Отзывы клиентов
@@ -6,19 +6,19 @@ section#reviews.reviews
 			#carousel-reviews.carousel.slide(data-ride="carousel", data-interval="false")
 
 				ol.carousel-indicators
-					li.active(data-target="#carousel-reviews", data-slide-to="0")
-					li(data-target="#carousel-reviews", data-slide-to="1")
-					li(data-target="#carousel-reviews", data-slide-to="2")
-					li(data-target="#carousel-reviews", data-slide-to="3")
-					li(data-target="#carousel-reviews", data-slide-to="4")
+					//- li.active(data-target="#carousel-reviews", data-slide-to="0")
+					//- li(data-target="#carousel-reviews", data-slide-to="1")
+					//- li(data-target="#carousel-reviews", data-slide-to="2")
+					//- li(data-target="#carousel-reviews", data-slide-to="3")
+					//- li(data-target="#carousel-reviews", data-slide-to="4")
 
 				.carousel-inner(role="listbox")
 
 					.item
 						.col-sm-3.col-sm-offset-1
 							.slide__left
-								.slide__img-wrap
-									img.slide__img.reviews__photo.img-thumbnail(src="img/review-1.jpg", alt="")
+								.slide__img-wrap.review__img
+									img.slide__img(src="img/review-1.jpg", alt="")
 						.col-sm-7
 							.slide__right
 								.slide__content
@@ -30,8 +30,8 @@ section#reviews.reviews
 					.item
 						.col-sm-3.col-sm-offset-1
 							.slide__left
-								.slide__img-wrap
-									img.slide__img.reviews__photo.img-thumbnail(src="img/review-no-foto.jpg", alt="")
+								.slide__img-wrap.review__img
+									img.slide__img(src="img/review-no-photo.jpg", alt="")
 						.col-sm-7
 							.slide__right
 								.slide__content
@@ -42,8 +42,8 @@ section#reviews.reviews
 					.item
 						.col-sm-3.col-sm-offset-1
 							.slide__left
-								.slide__img-wrap
-									img.slide__img.reviews__photo.img-thumbnail(src="img/review-no-foto.jpg", alt="")
+								.slide__img-wrap.review__img
+									img(src="img/review-no-photo.jpg", alt="")
 						.col-sm-7
 							.slide__right
 								.slide__content
@@ -54,25 +54,26 @@ section#reviews.reviews
 					.item
 						.col-sm-3.col-sm-offset-1
 							.slide__left
-								.slide__img-wrap
-									img.slide__img.reviews__photo.img-thumbnail(src="img/review-2.jpg", alt="")
+								.slide__img-wrap.review__img
+									img(src="img/review-2.jpg", alt="")
 						.col-sm-7
 							.slide__right
 								.slide__content
 									.slide__title.reviews__name.h4 Бреева Екатерина
 									p.reviews__text
 										|Хочу выразить благодарность за отлично организованный квартирный переезд с грузчиками. Справились профессионально, быстро и качественно!
-					.item.active
+					.item
 						.col-sm-3.col-sm-offset-1
 							.slide__left
-								.slide__img-wrap
-									img.slide__img.reviews__photo.img-thumbnail(src="img/review-add.jpg", alt="")
+								.slide__img-wrap.review__img
+									img(src="img/review-add.jpg", alt="")
 						.col-sm-7
 							.slide__right
 								.slide__content
 									.slide__title.reviews__name.h3 Оставьте отзыв о нашей работе
-									button.reviews__btn.btn.btn-info.btn-lg(type="button", data-toggle="modal", data-target="#myModal") Добавить отзыв
-									.h3.reviews-add
+									.review__btn-wrap
+										button.reviews__btn.btn.btn-info.btn-lg(type="button", data-toggle="modal", data-target="#reviewModal") Добавить отзыв
+									.h3.reviews-add.hidden
 										.reviews-add__alert.h3 Спасибо за ваш отзыв!
 										.reviews-add__text.h4 Ваши данные успешно отправлены.
 
@@ -82,3 +83,5 @@ section#reviews.reviews
 				a.right.carousel-control(href="#carousel-reviews", role="button", data-slide="next")
 					span.icon-arrow_right(aria-hidden="true")
 					span.sr-only Next
+
+#ss-contacts.anchor

@@ -1,20 +1,21 @@
 #carousel-reviews .carousel-control {
 	background-image: none;
 }
-.img-thumbnail {
-	border-radius: 0;
-}
 
-.reviews__photo {
+.review__img > img {
 	width: 85%;
 	margin-bottom: 15px;
+	padding: 4px;
+	background-color: #fff;
+	border: 1px solid #ddd;
 }
+
 .reviews__text {
 	font-weight: 300;
 }
 
 .reviews__btn {
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 .reviews-add {
@@ -30,9 +31,13 @@
 	}
 }
 
+
 @media (max-width: 767px) {
-	.reviews__photo {
+	.review__img > img {
 		max-width: 70%;
+	}
+	.review__btn-wrap {
+		text-align: center;
 	}
 	.reviews__name {
 		margin-top: -10px;
@@ -43,6 +48,7 @@
 		text-align: center;
 	}
 }
+
 
 @media (min-width: 768px) and (max-width: 991px) {
 	#carousel-reviews .carousel-indicators {

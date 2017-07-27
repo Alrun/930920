@@ -4,22 +4,27 @@
 }
 .table {
 	background-color: #fff;
+
+	&__service {
+		width: 70%;
+	}
+
+	&__price {
+		width: 15%;
+	}
+
+	&__time {
+		width: 15%;
+	}
+
+	&__service,
+	&__price,
+	&__time {
+		background-color: $second-cl;
+		color: #fff;
+	}
 }
-.table__service {
-	width: 70%;
-}
-.table__price {
-	width: 15%;
-}
-.table__time {
-	width: 15%;
-}
-.table__service,
-.table__price,
-.table__time {
-	background-color: $second-cl;
-	color: #fff;
-}
+
 
 @media (max-width: 543px) {
 	.table {

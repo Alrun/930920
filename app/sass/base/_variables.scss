@@ -11,10 +11,3 @@ $serif: serif;
 // $title-color: #fff;
 // $text-color: #979797;
 $font: Roboto, $sans-serif;
-
-
-// Mixins
-
-@mixin outline {
-	outline: 2px solid $main-cl;
-}

@@ -1,6 +1,17 @@
-.text-danger {
-	color: #fb0500;
+.text-danger,
+.has-error .control-label,
+.has-error .input-group-addon,
+.has-error .form-control {
+	border-color: #ff0000;
+	color: #ff0000;
 }
-.text-success {
+.text-warning {
+	color: darken($main-cl, 10%);
+}
+.text-success,
+.has-success .control-label,
+.has-success .input-group-addon,
+.has-success .form-control {
+	border-color: #1b9617;
 	color: #1b9617;
 }

@@ -11,7 +11,7 @@
 .popover-title {
 	padding: 8px;
 	border-radius: 0;
-	background-color: $second-cl;
+	background-color: #444;
 	color: #fff;
 }
 .popover-content {
@@ -34,6 +34,7 @@
 	color: $main-cl;
 }
 
+
 @media (min-width: 768px) {
 	.bg-map {
 		position: relative;
@@ -53,6 +54,7 @@
 		}
 	}
 }
+
 
 @media (max-width: 991px) {
 	.bg-map::after {
