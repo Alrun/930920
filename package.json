@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/Alrun/930920.git"
   },
-  "author": "",
+  "author": "Alrun",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Alrun/930920/issues"
@@ -25,6 +25,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.2",
     "gulp-if": "^2.0.2",
+    "gulp-load-plugins": "^1.5.0",
     "gulp-newer": "^1.3.0",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",

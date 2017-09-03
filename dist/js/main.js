@@ -47,16 +47,16 @@ window.addEventListener('load',function(){var e=document.getElementsByTagName('d
     } else { f(); }
 })(document, window, "yandex_metrika_callbacks");
 //Chrome Smooth Scroll
-(function() {
+(function () {
 
   try {
     $.browserSelector();
-    if($("html").hasClass("chrome")) {
+    if ($("html").hasClass("chrome")) {
       $.smoothScroll();
     }
-  } catch(err) {
+  } catch (err) {
     console.log(err);
-  };
+  }
 }());
 
 $(document).ready(function () {
@@ -69,7 +69,7 @@ $(document).ready(function () {
 
 
   // Сounter campaign
-  (function() {
+  (function () {
 
     var date = getRelativeDate();
 
@@ -80,16 +80,17 @@ $(document).ready(function () {
       displayCaptions: true,
       fontSize: 24,
       captionSize: 12,
-      callback: true,
+      lang: "ru",
+      callback: true
     });
 
     function getRelativeDate(days, hours, minutes) {
 
       var countd = 16,
-          countmo = '0' + ( (new Date().getMonth()) + 2 ),
-          county = new Date().getFullYear(),
-          countdate = '' + county + '/' + countmo + '/' + countd + ' 00:00:00',
-          date = new Date(countdate);
+        countmo = '0' + ( (new Date().getMonth()) + 2 ),
+        county = new Date().getFullYear(),
+        countdate = '' + county + '/' + countmo + '/' + countd + ' 00:00:00',
+        date = new Date(countdate);
 
       return date;
     };
@@ -100,20 +101,21 @@ $(document).ready(function () {
   (function () {
 
     var countSlides = $('#carousel-promo .item').size(),
-        i = 0;
+      i = 0;
 
     while (i !== countSlides) {
       $('#carousel-promo .carousel-indicators')
         .append('<li data-target="#carousel-promo" data-slide-to="' + i + '"></li>');
 
       i++
-    };
+    }
+    ;
   }());
 
   (function () {
 
     var countSlides = $('#carousel-reviews .item').size(),
-        i = 0;
+      i = 0;
 
     while (i !== countSlides) {
       $('#carousel-reviews .carousel-indicators')
@@ -136,10 +138,10 @@ $(document).ready(function () {
 
 
   // Float menu
-  (function() {
+  (function () {
 
     var float = {};
-        float.menu = {
+    float.menu = {
 
       initialize: function () {
         float.menu.initializeFloatMenu();
@@ -147,7 +149,7 @@ $(document).ready(function () {
 
       initializeFloatMenu: function () {
         var menu = $('.navbar'),
-            header = $('.header');
+          header = $('.header');
 
         window.onscroll = function () {
           var scroll = float.menu.getScrollTop();
@@ -170,12 +172,13 @@ $(document).ready(function () {
 
     if (document.documentElement.clientWidth > 768) {
       float.menu.initialize();
-    };
+    }
+    ;
   }());
 
 
   // Smooth anchor scroll
-  (function() {
+  (function () {
 
     var scroll = new SmoothScroll('a[href^="#ss-"]', {
       // Selectors
@@ -186,11 +189,14 @@ $(document).ready(function () {
       speed: 500, // Integer. How fast to complete the scroll in milliseconds
       offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
       easing: 'easeInOutCubic', // Easing pattern to use
-      customEasing: function (time) {}, // Function. Custom easing pattern
+      customEasing: function (time) {
+      }, // Function. Custom easing pattern
 
       // Callback API
-      before: function () {}, // Callback to run before scroll
-      after: function () {} // Callback to run after scroll
+      before: function () {
+      }, // Callback to run before scroll
+      after: function () {
+      } // Callback to run after scroll
     });
   }());
 
@@ -198,13 +204,13 @@ $(document).ready(function () {
 
 
 // Form new review
-$(function() {
-  $('#send').click(function() {
+$(function () {
+  $('#send').click(function () {
     var formValid = true;
 
-    $('input, textarea').each(function() {
+    $('input, textarea').each(function () {
       var formGroup = $(this).parents('.form-group'),
-          icon = formGroup.find('.form-control-feedback');
+        icon = formGroup.find('.form-control-feedback');
 
       if (this.checkValidity()) {
         formGroup.addClass('has-success').removeClass('has-error');
@@ -214,19 +220,19 @@ $(function() {
         formGroup.addClass('has-error').removeClass('has-success');
         icon.addClass('icon-error').removeClass('icon-ok');
 
-        formValid = false;  
+        formValid = false;
       }
     });
 
     if (formValid) {
-      $('form').val(function() {
+      $('form').val(function () {
         var str = $(this).serialize();
 
         $.ajax({
           url: '/wp-content/themes/gp/send.php',
           type: 'POST',
           data: str,
-          success: function(data) {
+          success: function (data) {
             data
           }
         });
